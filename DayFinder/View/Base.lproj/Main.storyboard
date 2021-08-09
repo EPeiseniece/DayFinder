@@ -212,9 +212,15 @@
                     <navigationItem key="navigationItem" title="Day Finder" id="QhV-5J-AAx">
                         <barButtonItem key="leftBarButtonItem" image="info.circle" catalog="system" id="YDz-q6-0up">
                             <color key="tintColor" systemColor="secondaryLabelColor"/>
+                            <connections>
+                                <segue destination="guT-2g-Tyg" kind="push" id="NPx-1F-vnp"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="moon.circle.fill" catalog="system" id="c2s-YM-w4E">
                             <color key="tintColor" systemColor="secondaryLabelColor"/>
+                            <connections>
+                                <segue destination="1tq-Du-pjN" kind="presentation" id="Fmx-9c-20m"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -229,12 +235,95 @@
             </objects>
             <point key="canvasLocation" x="936.23188405797111" y="85.714285714285708"/>
         </scene>
+        <!--Info View Controller-->
+        <scene sceneID="1cY-YD-QMW">
+            <objects>
+                <viewController id="guT-2g-Tyg" customClass="InfoViewController" customModule="DayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xNr-CR-ZKx">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mmB-Tw-DQr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zu0-AW-ubV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYZ-JC-F5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="778"/>
+        </scene>
+        <!--Appearance View Controller-->
+        <scene sceneID="E5x-5k-oWX">
+            <objects>
+                <viewController id="1tq-Du-pjN" customClass="AppearanceViewController" customModule="DayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Khz-Kg-ULk">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="dkt-4E-AWo">
+                                <rect key="frame" x="111" y="379.66666666666669" width="206" height="113"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Mode is on" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkL-wz-F8r">
+                                        <rect key="frame" x="0.0" y="0.0" width="206" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="2t3-Sc-9pL"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="206" id="h0d-bV-CmL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNB-vd-h9k">
+                                        <rect key="frame" x="0.0" y="71" width="206" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="206" id="fb3-f9-qVm"/>
+                                            <constraint firstAttribute="height" constant="42" id="wWZ-pE-F3d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Open Settings"/>
+                                        <connections>
+                                            <action selector="openSettingsTapped:" destination="1tq-Du-pjN" eventType="touchUpInside" id="Mov-wi-grZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12V-SQ-mYI">
+                                <rect key="frame" x="362" y="20" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="1tq-Du-pjN" eventType="touchUpInside" id="gUU-xI-865"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mdh-tT-EJD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dkt-4E-AWo" firstAttribute="centerX" secondItem="Khz-Kg-ULk" secondAttribute="centerX" id="bM0-OM-3lY"/>
+                            <constraint firstItem="dkt-4E-AWo" firstAttribute="centerY" secondItem="Khz-Kg-ULk" secondAttribute="centerY" id="zUv-UZ-of6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="bkL-wz-F8r" id="KTa-eb-lxG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQ7-zp-O37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715.8878504672896" y="85.529157667386613"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="lMG-mV-BdE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8HX-xe-5fL" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="gsQ-KQ-5ZE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gsQ-KQ-5ZE">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -266,6 +355,9 @@
         </systemColor>
         <systemColor name="separatorColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
