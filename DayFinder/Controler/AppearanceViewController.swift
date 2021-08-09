@@ -1,19 +1,19 @@
  //
-//  AppearanceViewController.swift
-//  DayFinder
-//
-//  Created by elina.peiseniece on 09/08/2021.
-//
-
-import UIKit
-
-class AppearanceViewController: UIViewController {
-
+ //  AppearanceViewController.swift
+ //  DayFinder
+ //
+ //  Created by elina.peiseniece on 09/08/2021.
+ //
+ 
+ import UIKit
+ 
+ class AppearanceViewController: UIViewController {
+    
     @IBOutlet weak var textLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabelText()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -21,13 +21,13 @@ class AppearanceViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
         
     }
-
+    
     @IBAction func openSettingsTapped(_ sender: Any) {
         openSettings()
     }
     
     func setLabelText(){
-       var text = "Unable to specify UI style"
+        var text = "Unable to specify UI style"
         if traitCollection.userInterfaceStyle == .dark{
             text = "Dark Mode is On\n Go to settings if you like \n to change to light mode"
         }else{
@@ -48,8 +48,8 @@ class AppearanceViewController: UIViewController {
             }
         }
     }
-        override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-            setLabelText()
-}
-    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        setLabelText()
     }
+    
+ }
