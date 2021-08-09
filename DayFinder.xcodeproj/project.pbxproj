@@ -16,6 +16,7 @@
 		EA2604A926C1750900F8AE48 /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2604A826C1750900F8AE48 /* AppearanceViewController.swift */; };
 		EA2604AB26C1763600F8AE48 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2604AA26C1763600F8AE48 /* InfoViewController.swift */; };
 		EA2604D826C1A6EF00F8AE48 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2604D726C1A6EF00F8AE48 /* Extension.swift */; };
+		EA2604DA26C1BE7400F8AE48 /* SurpriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2604D926C1BE7400F8AE48 /* SurpriseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EA2604A826C1750900F8AE48 /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
 		EA2604AA26C1763600F8AE48 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		EA2604D726C1A6EF00F8AE48 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EA2604D926C1BE7400F8AE48 /* SurpriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurpriseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				EA26049526C12BB900F8AE48 /* ViewController.swift */,
 				EA2604A826C1750900F8AE48 /* AppearanceViewController.swift */,
 				EA2604AA26C1763600F8AE48 /* InfoViewController.swift */,
+				EA2604D926C1BE7400F8AE48 /* SurpriseViewController.swift */,
 			);
 			path = Controler;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				EA2604A926C1750900F8AE48 /* AppearanceViewController.swift in Sources */,
 				EA26049626C12BB900F8AE48 /* ViewController.swift in Sources */,
 				EA26049226C12BB900F8AE48 /* AppDelegate.swift in Sources */,
+				EA2604DA26C1BE7400F8AE48 /* SurpriseViewController.swift in Sources */,
 				EA2604D826C1A6EF00F8AE48 /* Extension.swift in Sources */,
 				EA26049426C12BB900F8AE48 /* SceneDelegate.swift in Sources */,
 				EA2604AB26C1763600F8AE48 /* InfoViewController.swift in Sources */,
