@@ -12,6 +12,7 @@ class AppearanceViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setLabelText()
 
         // Do any additional setup after loading the view.
     }
@@ -26,6 +27,13 @@ class AppearanceViewController: UIViewController {
     }
     
     func setLabelText(){
+       var text = "Unable to specify UI style"
+        if traitCollection.userInterfaceStyle == .dark{
+            text = "Dark Mode is On\n Go to settings if you like \n to change to light mode"
+        }else{
+            text = "Light Mode is On\n Go to settings if you like \n to change to dark mode"
+        }
+        textLabel.text = text
         
     }
     
@@ -40,8 +48,8 @@ class AppearanceViewController: UIViewController {
             }
         }
     }
+        override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+            setLabelText()
 }
-
- 
- 
- 
+    
+    }

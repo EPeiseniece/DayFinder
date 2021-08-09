@@ -15,6 +15,7 @@
 		EA26049E26C12BC300F8AE48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA26049C26C12BC300F8AE48 /* LaunchScreen.storyboard */; };
 		EA2604A926C1750900F8AE48 /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2604A826C1750900F8AE48 /* AppearanceViewController.swift */; };
 		EA2604AB26C1763600F8AE48 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2604AA26C1763600F8AE48 /* InfoViewController.swift */; };
+		EA2604D826C1A6EF00F8AE48 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2604D726C1A6EF00F8AE48 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EA26049F26C12BC400F8AE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA2604A826C1750900F8AE48 /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
 		EA2604AA26C1763600F8AE48 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		EA2604D726C1A6EF00F8AE48 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		EA26049026C12BB900F8AE48 /* DayFinder */ = {
 			isa = PBXGroup;
 			children = (
+				EA2604D626C1A6D800F8AE48 /* Extensions */,
 				EA2604A526C12C2300F8AE48 /* AppDelegate */,
 				EA2604A626C12C3500F8AE48 /* Controler */,
 				EA2604A726C12C4900F8AE48 /* View */,
@@ -95,6 +98,14 @@
 				EA26049C26C12BC300F8AE48 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EA2604D626C1A6D800F8AE48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA2604D726C1A6EF00F8AE48 /* Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 				EA2604A926C1750900F8AE48 /* AppearanceViewController.swift in Sources */,
 				EA26049626C12BB900F8AE48 /* ViewController.swift in Sources */,
 				EA26049226C12BB900F8AE48 /* AppDelegate.swift in Sources */,
+				EA2604D826C1A6EF00F8AE48 /* Extension.swift in Sources */,
 				EA26049426C12BB900F8AE48 /* SceneDelegate.swift in Sources */,
 				EA2604AB26C1763600F8AE48 /* InfoViewController.swift in Sources */,
 			);

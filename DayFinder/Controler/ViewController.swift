@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+ // MARK: Weekday Tapped
+    
     @IBAction func findWeekdayTapped(_ sender: Any) {
         let calendar = Calendar.current
         
@@ -55,6 +56,7 @@ class ViewController: UIViewController {
                 
                 //alert
                 warningPopup(withTitle: "Wrong Date", withMessage: "Please enter correct date")
+                #warning("Testing the warning thing")
             }
         default:
             findButton.setTitle("FIND", for: .normal)
@@ -82,5 +84,31 @@ class ViewController: UIViewController {
         }
         
     }
+
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "dayFinder"{
+            // Get the new view controller using segue.destination.
+            let vc = segue.destination as! InfoViewController
+            
+            // Pass the selected object to the new view controller.
+            
+            vc.infoText = "DayFinder App helps you \n find weekday for given date"
+        }
+        
+        
+    }
+    
+    
+    
+
+
+
+
+
 }
 
