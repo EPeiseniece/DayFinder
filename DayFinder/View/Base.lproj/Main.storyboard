@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8HX-xe-5fL">
-    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DayFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="evie-s-KnoEP81a9Rk-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="zz1-BF-nyl">
-                                <rect key="frame" x="-44" y="-44" width="463" height="732"/>
+                                <rect key="frame" x="-44" y="0.0" width="516" height="926"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="yUF-XG-qaT">
-                                <rect key="frame" x="24" y="59" width="328" height="329"/>
+                                <rect key="frame" x="24" y="103" width="381" height="329"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uw8-cx-9TS">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="381" height="329"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fw5-aJ-2Go">
-                                                <rect key="frame" x="0.0" y="0.0" width="328" height="176"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="381" height="176"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSj-AK-3vC">
-                                                        <rect key="frame" x="53.5" y="0.0" width="221" height="50"/>
+                                                        <rect key="frame" x="80" y="0.0" width="221" height="50"/>
                                                         <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="221" id="DxE-1n-vuV"/>
@@ -45,7 +45,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="fe3-cJ-9qf">
-                                                        <rect key="frame" x="12.5" y="58" width="303" height="118"/>
+                                                        <rect key="frame" x="39" y="58" width="303" height="118"/>
                                                         <subviews>
                                                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OkP-jJ-fTs">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="118"/>
@@ -161,7 +161,7 @@
                                                 </variation>
                                             </stackView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day of the week, inside your finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH8-FC-jj2">
-                                                <rect key="frame" x="0.0" y="186" width="328" height="91"/>
+                                                <rect key="frame" x="0.0" y="186" width="381" height="91"/>
                                                 <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="91" id="4wa-3I-xrb"/>
@@ -177,7 +177,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ii7-3J-wKI">
-                                                <rect key="frame" x="0.0" y="287" width="328" height="42"/>
+                                                <rect key="frame" x="0.0" y="287" width="381" height="42"/>
                                                 <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="FIND">
@@ -206,7 +206,7 @@
                             <constraint firstItem="zz1-BF-nyl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-88" id="DDs-eS-IRk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yUF-XG-qaT" secondAttribute="trailing" constant="23" id="DhV-QB-evu"/>
                             <constraint firstItem="yUF-XG-qaT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Nav-9l-dle"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zz1-BF-nyl" secondAttribute="bottom" constant="-21" id="Xix-yK-jI3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zz1-BF-nyl" secondAttribute="bottom" constant="-34" id="Xix-yK-jI3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Day Finder" id="QhV-5J-AAx">
@@ -235,7 +235,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8HX-xe-5fL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="gsQ-KQ-5ZE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
